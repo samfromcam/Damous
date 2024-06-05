@@ -29,7 +29,7 @@ function Footer() {
                 <h6 className="text-gray-200 font-medium mb-1">Contact Us</h6>
                 <ul>
                   <li className="mb-1">
-                    <Link to="#" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">info@damous.com</Link>
+                    <Link to="#" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">dylanwu2025@u.northwestern.edu</Link>
                   </li>
                 </ul>
               </div>
