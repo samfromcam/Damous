@@ -26,7 +26,7 @@ function Footer() {
 
               {/* 2nd block */}
               <div className="text-sm">
-                <h6 className="text-gray-200 font-medium mb-1">Contact Us</h6>
+                <h6 className="text-gray-200 font-large mb-1">Contact Us</h6>
                 <ul>
                   <li className="mb-1">
                     <Link to="#" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">contact@damous.co</Link>

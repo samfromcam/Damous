@@ -1,7 +1,7 @@
 import React from 'react';
 
-import FeatImage01 from '../images/data_source-feature-1.jpg';
-import FeatImage02 from '../images/data_refining.jpg';
+import FeatImage01 from '../images/f1.png';
+import FeatImage02 from '../images/f2.png';
 import FeatImage03 from '../images/features-03-image-03.png';
 
 function FeaturesZigzag() {
@@ -60,7 +60,7 @@ function FeaturesZigzag() {
             <div className="md:grid md:grid-cols-12 md:gap-6 items-center">
               {/* Image */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 rtl" data-aos="fade-up">
-                <img className="max-w-full mx-auto md:max-w-none h-auto" src={FeatImage02} width="540" height="405" alt="Features 02" />
+                <img className="max-w-full mx-auto md:max-w-none h-auto" src={FeatImage02} width="600" height="460" alt="Features 02" />
               </div>
               {/* Content */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-left">
