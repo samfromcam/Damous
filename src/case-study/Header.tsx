@@ -1,5 +1,4 @@
 
-import logo from '../assets/northwestern_logo.png';
 import './Header.css';
 import "@fontsource/poppins/700.css"
 import "@fontsource/poppins/600.css"
