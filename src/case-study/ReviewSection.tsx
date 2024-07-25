@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 import profile_pic from '../assets/chinazzo.png';
 

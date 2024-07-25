@@ -15,7 +15,7 @@ export default function Footer() {
                 </div>
                 <div className="right_text">
                     <p>Can't find the data you need? Let us get it for you</p>
-                    
+                    <button>Talk to us</button>
                 </div>
             </footer>
         </>

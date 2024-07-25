@@ -45,7 +45,7 @@
         }
     }
     position: relative;
-    padding-bottom: 13%;
+    padding-bottom: clamp(60px, 10%, 150px);
 }
 
 .item {

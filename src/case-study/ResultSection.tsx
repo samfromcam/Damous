@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 
 // Define the container for the Result section

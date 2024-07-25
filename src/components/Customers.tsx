@@ -17,9 +17,13 @@ const CarouselItem2 =  (
 
 const carouselItems = [CarouselItem1, CarouselItem2];
 
-const CustomDot = ({ onClick, index, active }) => {
-    // onMove means if dragging or swiping in progress.
-    // active is provided by this lib for checking if the item is active or not.
+interface CustomDotProps {
+  onClick: () => void;
+  index: number;
+  active: boolean;
+}
+
+const CustomDot = ({ onClick, index, active }: CustomDotProps) => {
     return (
       <button
         className={active ? "active" : "inactive"}
@@ -28,7 +32,7 @@ const CustomDot = ({ onClick, index, active }) => {
         {React.Children.toArray(carouselItems)[index]}
       </button>
     );
-  };
+};
 
 const responsive = {
     desktop: {
@@ -53,7 +57,9 @@ class DemoCarousel extends Component {
                 draggable={false}
                 showDots
                 arrows={false}
-                customDot={<CustomDot />}
+                customDot={<CustomDot onClick={function (): void {
+                  throw new Error('Function not implemented.');
+                } } index={0} active={false} />}
                 renderDotsOutside
                 responsive={responsive}
                 infinite={true}

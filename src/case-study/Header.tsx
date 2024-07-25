@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 import logo from '../assets/northwestern_logo.png';
 
@@ -19,8 +18,17 @@ const HeaderContainer = styled.header`
     z-index: 1;  // Ensure it is on top of other elements
 `;
 
+interface HeaderProps {
+    weight?: string;
+    size?: string;
+    lineHeight?: string;
+    gradient?: string;
+    shadow?: string;
+  }
+
+  
 // Styled component for the main title and subtitles
-const Title = styled.h1`
+const Title = styled.h1<HeaderProps>`
     font-family: 'Poppins', sans-serif;
     font-weight: ${(props) => props.weight || 700};
     font-size: ${(props) => props.size || '40px'};

@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 import ProblemSection from './ProblemSection';
 import SolutionSection from './SolutionSection';
@@ -6,6 +5,10 @@ import ResultSection from './ResultSection';
 import ReviewSection from './ReviewSection';
 import Header from './Header';
 import Footer from './Footer';
+
+interface BannerProps {
+    top?: string;
+  }
 
 // Main container for the case study page
 const PageContainer = styled.div`
@@ -17,7 +20,7 @@ const PageContainer = styled.div`
 `;
 
 // Component for reusable banner with dynamic top positioning
-const Banner = styled.div`
+const Banner = styled.div<BannerProps>`
     display: flex;
     align-items: center;
     justify-content: center;

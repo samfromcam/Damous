@@ -23,7 +23,7 @@ export default function WhatWeDo() {
             <img src='./data_refinement.png'></img>
             <div className="ServiceText">
                 <p className="title"><span>Data</span> Refinement</p>
-                <p className="text">Ensure your data is accurate, reliable, and primed for analysis with our expert cleaning/refinement services. Partner with us for seamless integration and expert guidance, enhancing data accuracy and productivity for your advancements</p>
+                <p className="text">Ensure your data is accurate, reliable, and primed for analysis with our expert cleaning / refinement services. Partner with us for seamless integration and expert guidance, enhancing data accuracy and productivity for your advancements</p>
             </div>
         </div>
     </div>

@@ -21,7 +21,7 @@ export default function Projects() {
             </a>
             <a href="/case-study" className="project">
                 <div className="icon">
-                    <img src="" alt="" />
+                    <img src="./roseCase.png" alt="" />
                 </div>
                 <p className="type">CASE STUDY</p>
                 <p className="caseTitle">Damous X Rose Inc</p>
