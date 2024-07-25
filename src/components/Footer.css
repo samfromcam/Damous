@@ -42,7 +42,7 @@ footer {
     gap: 1rem;
     font-size: clamp(10px, 2vw, 15px);
     & button {
-        width: 73px;
+        max-width: 93px;
         height: 33px;
     }
 }

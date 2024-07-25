@@ -26,3 +26,7 @@ body {
   justify-content: space-around;
   row-gap: 100px;
 }
+
+button {
+  color: black;
+}
