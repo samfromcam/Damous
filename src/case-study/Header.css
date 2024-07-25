@@ -1,0 +1,32 @@
+.headerBox {
+    position: absolute;
+    width: 50%; /* Adjust base width for responsiveness */
+    height: 20vh; /* Adjust height relative to the viewport */
+    left: 25%; /* Centering it by setting left to half of the remaining (100% - width) */
+    top: 60px; /* Adjust top as needed */
+    background: linear-gradient(181.97deg, #000000 67.89%, rgba(0, 0, 0, 0) 98.34%);
+}
+
+
+/* Smaller screens and mobile devices */
+@media (max-width: 768px) {
+    .headerBox {
+        width: 90%; /* Increase width on smaller screens */
+        left: 5%; /* Centering it with adjusted width */
+        height: 25vh; /* Adjust height to be more proportionate on smaller screens */
+    }
+
+    .header {
+        flex-direction: column;
+        padding: 10px 0; /* Add some padding on top and bottom */
+    }
+}
+
+/* Very small devices, like small smartphones */
+@media (max-width: 480px) {
+    .headerBox {
+        width: 100%;
+        left: 0;
+        top: 50px; /* Adjust if needed to fit smaller screens better */
+    }
+}

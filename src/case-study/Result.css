@@ -1,0 +1,128 @@
+/* ProblemSection.css */
+
+.result-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Banner */
+.result-banner {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #131B30 0%, #161F39 100%);
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    color: #918383;
+    position: absolute;
+    width: 171px;
+    height: 34px;
+    left: 50%;
+    top: 1020px;
+}
+
+.result-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: #F0F0F0;
+    margin: 10px 0;
+    position: absolute;
+    width: 624px;
+    height: 114px;
+    left: 50%;
+    top: 1100px;
+}
+
+.result-description {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #FFFFFF;
+    margin: 10px 0;
+    position: absolute;
+    width: 708px;
+    height: 161px;
+    left: 50%;
+    /* transform: translateX(-50%); */
+    top: 1260px;
+}
+
+.result-button {
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+    width: 180px;
+    height: 47px;
+    padding: 0px;
+    border-radius: 8px;
+    background-color: #7BEAE3;
+    border-color: #7BEAE3;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 500;
+    top: 1380px;
+    left: 550%;
+    }
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .result-banner {
+        font-size: 1.25rem;
+        line-height: 2rem;
+        width: 90%;
+        left: 2%;
+        transform: translateX(0%);
+        top: 1400px;
+    }
+
+    .result-title {
+        font-size: 1.5rem; /* Adjusted for smaller screens */
+        line-height: 2rem; /* Adjusted for smaller screens */
+        width: 90%;
+        left: 5%;
+        transform: translateX(0%);
+        top: 1500px;
+    }
+
+    .result-description {
+        font-size: 0.875rem; /* Adjusted for smaller screens */
+        line-height: 1.25rem; /* Adjusted for smaller screens */
+        width: 90%;
+        left: 5%;
+        transform: translateX(0%);
+        top: 1620px;
+    }
+
+    .result-button {
+        position: relative;
+        align-items: center;
+        justify-content: space-around;
+        width: 180px;
+        height: 47px;
+        padding: 0px;
+        border-radius: 8px;
+        background-color: #7BEAE3;
+        border-color: #7BEAE3;
+        font-family: Poppins;
+        font-size: 15px;
+        font-weight: 500;
+        top: 1780px;
+        left: 4%;
+        }
+
+}
