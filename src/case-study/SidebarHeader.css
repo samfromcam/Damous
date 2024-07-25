@@ -64,14 +64,13 @@
 
 @media (max-width: 480px) {
     .sidebar {
-        width: 100vw; /* Full-width sidebar on very small devices */
-        left: 0;
-        top: 0;
         height: auto; /* Auto height for flexibility */
+        margin-top: 15px;
     }
 
     .sidebar-title h1 {
         font-size: 6vw; /* Even larger font size for very small devices */
+        top: 5vh; /* Adjusted top positioning for very small devices */
     }
 
     .sidebar-nav a {
@@ -80,7 +79,5 @@
 
     .sidebar-logo img {
         width: 50%; /* Adjusted image size for very small devices */
-        height: auto; /* Maintain aspect ratio */
-        margin: 0 auto; /* Center the logo */
     }
 }

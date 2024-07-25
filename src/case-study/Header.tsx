@@ -7,9 +7,7 @@ import "@fontsource/poppins/500.css"
 function Header() {
     return (
         <>
-            <div className="header">
-                <a href="/"><h1>Damous</h1></a>
-            </div>
+            <a href="/" className='header'>Damous</a>
         </>
     );
 }
