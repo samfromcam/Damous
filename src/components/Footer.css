@@ -44,5 +44,6 @@ footer {
     & button {
         max-width: 93px;
         height: 33px;
+        color: black;
     }
 }
