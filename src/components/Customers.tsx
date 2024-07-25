@@ -75,7 +75,7 @@ class DemoCarousel extends Component {
                     </div>
                 </div>
                 <div className='item'>
-                    <p className='testimonial'>[insert Rose Testimonial]</p>
+                    <p className='testimonial'></p>
                     <div className="user">
                         <p className="person">Djibril Cisse</p>
                         <p className="company">Rose Inc</p>

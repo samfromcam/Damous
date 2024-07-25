@@ -11,13 +11,17 @@
   },
   "dependencies": {
     "@fontsource/poppins": "^5.0.14",
+    "@react-spring/parallax": "^9.7.4",
+    "@react-spring/web": "^9.7.4",
     "esbuild": "^0.23.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-multi-carousel": "^2.8.5",
+    "react-parallax": "^3.5.1",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.25.1",
     "react-scroll": "^1.9.0",
+    "react-spring": "^9.7.4",
     "styled-components": "^6.1.12"
   },
   "devDependencies": {
