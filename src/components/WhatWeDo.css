@@ -1,0 +1,50 @@
+.WhatWeDo{
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.ServiceText {
+    margin-top: -15px;
+    width: 32%;
+    color: white;
+    & p.text {
+        font-family: Poppins;
+        font-size: clamp(12px, 1.45vw, 22px);
+        font-weight: 300;
+        text-align: left; 
+        width: 100%;
+        height: 100%;
+        margin-top: -15px;
+    }
+    & p.title {
+        font-family: Poppins;
+        font-size: clamp(30px, 3vw, 50px);;
+        font-weight: 500;
+        text-align: left;   
+        & span {
+            color: #9BAEF0;
+        }     
+    }
+}
+
+.Service {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    & img {
+        width: clamp(10px, 40%, 350px);
+    }
+}
+
+button {
+    min-height: 20px;
+    border-radius: 8px;
+    background-color: #7BEAE3;
+    font-family: Poppins;
+    font-size: clamp(8px, 0.8vw, 20px);
+    font-weight: 300;
+    text-align: center;
+    border-color: #7BEAE3;
+}

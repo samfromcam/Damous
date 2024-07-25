@@ -1,0 +1,45 @@
+footer {
+    background-color: black;
+
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em auto;
+    padding: 0;
+    width: 75%;
+}
+
+.left_text{
+    display: flex;
+    flex-direction: column;
+    font-family: Poppins;
+    text-align: left;   
+    font-weight: 150;
+    color: #ffffff;
+    padding-left: 12.5%;
+    & p.title{
+        color: #3946C1;
+        font-size: 25px;
+        font-weight: 1000;
+
+    }
+    & p.emails{
+        font-size: 15px;
+
+    }
+}
+
+.right_text {
+    display: flex;
+    flex-direction: column;
+    font-family: Poppins;
+    text-align: right;   
+    font-weight: 150;
+    color: #ffffff;
+    padding-right: 12.5%;
+    padding-bottom: 5%;
+}

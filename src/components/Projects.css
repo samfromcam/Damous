@@ -1,0 +1,48 @@
+.Projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    max-width: 800px;
+    margin-inline: auto;
+    justify-items: center;
+}
+
+.project {
+    max-width: 350px;
+    min-height: 286px;
+    text-decoration: none;
+    & .icon {
+        width: 350px;
+        height: 227px;
+        border-radius: 10px;
+        background-color: #252424;
+        display: flex;
+        align-items: center;
+        & img {
+            width: 40%;
+            margin: auto;
+        }
+    }
+    & p {
+        margin-left: 15px;
+        font-family: Poppins;
+        text-align: left;    
+    }
+}
+
+p.type {
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 15px;
+    letter-spacing: 0.15em;
+    margin-top: 22px;
+    color: #9BAEF0;
+}
+
+p.caseTitle {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 22.5px;
+    letter-spacing: 0.15em;
+    margin-top: -7px;
+    color: #F3DEDE;
+}

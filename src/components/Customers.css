@@ -1,0 +1,89 @@
+.testimonial {
+    font-family: Poppins;
+    font-size: clamp(15px, 1.5vw, 25px);
+    font-weight: 300;
+    line-height: 30px;
+    text-align: center;    
+    color: white;
+    width: 85%;
+}
+
+.person {
+    font-family: Poppins;
+    font-size: clamp(12px, 1.3vw, 22px);
+    font-weight: 300;
+    text-align: center;
+    color: white;    
+}
+
+.company {
+    font-family: Poppins;
+    font-size: clamp(10px, 1.1vw, 16px);
+    font-weight: 300;
+    line-height: 18px;
+    text-align: center;
+    color: #C6C6C6;  
+    margin-top: -10px;  
+}
+
+.carousel-container {
+    background: linear-gradient(206.11deg, rgba(32, 25, 25, 0.8) 6.75%, rgba(51, 47, 68, 0.8) 51.85%, rgba(73, 72, 115, 0.8) 101.76%);
+    height: 33%;
+    padding: 63px 67px 63px 0px;
+    border-radius: 20px;
+    width: 75%;
+}
+
+.Carousel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    & button {
+        & img {
+            width: clamp(100px, 25vw, 250px);
+        }
+    }
+    position: relative;
+    padding-bottom: 13%;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.custom-dot-list-style {
+    & button {
+        background-color: transparent;
+        border: 0;
+    }
+    
+}
+
+.active {
+    opacity: .45;
+    transition-delay: 2s;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.inactive {
+    opacity: 1;
+    transition-delay: 2s;
+    animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: .45;
+    }
+}
