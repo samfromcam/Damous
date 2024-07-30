@@ -4,6 +4,26 @@ import "@fontsource/poppins/500.css"
 import "@fontsource/poppins/300.css"
 
 export default function WhatWeDo() {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = "https://assets.calendly.com/assets/external/widget.js";
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
+  const openCalendly = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    if (window.Calendly) {
+      window.Calendly.initPopupWidget({url: 'https://calendly.com/damous-info/general-meeting'});
+    } else {
+      console.error('Calendly script not loaded');
+    }
+  };
+  
   return (
     <div className='WhatWeDo'>
       <SectionHeader 
@@ -15,7 +35,7 @@ export default function WhatWeDo() {
             <div className="ServiceText">
                 <p className="title"><span>Data</span> Procurement</p>
                 <p className="text">Access to high-quality vetted data customized precisely to your needs. We would source the data you require, empowering you to tap into the rich data space and thrive in any industry</p>
-                <button>Get My Data</button>
+                <button onClick={openCalendly}>Get My Data</button>
             </div>
             <img src='./data_procurement.png'></img>
         </div>
