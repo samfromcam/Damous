@@ -1,0 +1,15 @@
+.header {
+    font-family: 'Poppins';
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 75px;
+    text-align: left;
+    background: -webkit-linear-gradient(90deg, #3946C1 0%, #5661CF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 3%;
+    margin-left: 5%;
+    width: 250px;
+    height: 70px;
+  }
