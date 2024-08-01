@@ -2,6 +2,7 @@ import './Footer.css'
 import "@fontsource/poppins/700.css"
 import "@fontsource/poppins/600.css"
 import "@fontsource/poppins/500.css"
+import { useEffect } from 'react';
 
 export default function Footer() {
     useEffect(() => {
@@ -25,7 +26,7 @@ export default function Footer() {
       };
     
     return (
-        <>
+        <div className='footer'>
             <hr/>
             <footer>
                 <div className='left_text'>
@@ -38,6 +39,6 @@ export default function Footer() {
                     <button onClick={openCalendly}>Talk to us</button>
                 </div>
             </footer>
-        </>
+        </div>
     )
 }

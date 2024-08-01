@@ -12,7 +12,12 @@ footer {
     align-items: center;
     width: 80%;
     margin-inline: auto;
-    margin-top: -100px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    min-height: 80px;
 }
 
 .left_text{

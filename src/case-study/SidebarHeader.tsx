@@ -1,4 +1,3 @@
-import logo from '../assets/northwestern_logo.png';
 import './SidebarHeader.css';
 import "@fontsource/poppins/700.css";
 import "@fontsource/poppins/600.css";
@@ -11,7 +10,7 @@ function SidebarHeader() {
                 <h1>Civilian Comfort in Underground Urban Transport</h1>
             </div>
             <div className='sidebar-logo'>
-                <img src={logo} alt="Northwestern University logo" />
+                <img src="./northwestern_logo.png" alt="Northwestern University logo" />
             </div>
             <nav className='sidebar-nav'>
                 <a href="#problem">Problem</a>

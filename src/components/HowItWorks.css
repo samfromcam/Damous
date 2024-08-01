@@ -74,7 +74,7 @@
     }
     & .descript {
         margin-top: -5px;
-        font-size: clamp(15px, 0.7vw, 25px);
+        font-size: clamp(12px, 0.7vw, 25px);
     }
 }
 

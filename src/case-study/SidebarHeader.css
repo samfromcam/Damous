@@ -2,14 +2,7 @@
 .sidebar {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 5vh 0; /* Adjusted padding for responsiveness */
-    gap: 20px;
-    position: absolute;
-    width: 30vw; /* Responsive width */
-    height: 90vh; /* Responsive height */
-    left: 5vw; /* Adjusted left positioning for responsiveness */
-    top: 5vh;
+    gap: 10px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
@@ -17,67 +10,51 @@
     width: 100%;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    font-size: 3vw; /* Responsive font size */
+    font-size: clamp(20px, 4vw, 40px);
     line-height: 1.2;
     background: linear-gradient(91.36deg, #C9C8F8 0.67%, #F7E8E8 28.92%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
 }
 
 .sidebar-logo img {
-    width: 100%; /* Responsive image sizing */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: 40px;
+    width: clamp(100px, 70%, 250px); /* Responsive image sizing */
+    margin-bottom: 20px;
 }
 
 .sidebar-nav a {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    font-size: 1.5vw; /* Responsive font size */
-    line-height: 30px;
+    font-size: clamp(15px, 1.3vw, 20px); /* Responsive font size */
     text-decoration-line: underline;
     color: #FFCBCB;
     display: block; /* Make links block to fill width */
-    width: 100%;
-    margin-bottom: 20px; /* Add space between links */
-
+    margin-bottom: 10px; /* Add space between links */
 }
 
+.sidebar-nav-link {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: clamp(15px, 1.3vw, 20px); /* Responsive font size */
+    text-decoration-line: underline;
+    color: #FFCBCB;
+    display: block; /* Make links block to fill width */
+    margin-bottom: 10px; /* Add space between links */
+}
+
+
 @media (max-width: 768px) {
-    .sidebar {
-        width: 80vw; /* Wider sidebar on smaller screens */
-        left: 10vw; /* Centering the sidebar more */
-        padding-top: 10vh; /* More padding on top for smaller screens */
+    .sidebar-title h1 {
+        font-size: clamp(20px, 5vw, 40px);; /* Larger font size for better readability on small devices */
     }
 
-    .sidebar-title h1 {
-        font-size: 5vw; /* Larger font size for better readability on small devices */
+    .sidebar-logo img {
+        width: 40%; /* Responsive image sizing */
+        margin-bottom: 20px;
     }
 
     .sidebar-nav a {
         display: none;
-        font-size: 4vw; /* Larger font size for better readability on small devices */
-    }
-}
-
-@media (max-width: 480px) {
-    .sidebar {
-        height: auto; /* Auto height for flexibility */
-        margin-top: 15px;
-    }
-
-    .sidebar-title h1 {
-        font-size: 6vw; /* Even larger font size for very small devices */
-        top: 5vh; /* Adjusted top positioning for very small devices */
-    }
-
-    .sidebar-nav a {
-        font-size: 5vw; /* Adjusting for very small screens */
-    }
-
-    .sidebar-logo img {
-        width: 50%; /* Adjusted image size for very small devices */
     }
 }

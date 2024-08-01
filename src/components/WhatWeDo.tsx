@@ -2,6 +2,7 @@ import './WhatWeDo.css'
 import SectionHeader from './sectionHeader'
 import "@fontsource/poppins/500.css"
 import "@fontsource/poppins/300.css"
+import { useEffect } from 'react';
 
 export default function WhatWeDo() {
   useEffect(() => {

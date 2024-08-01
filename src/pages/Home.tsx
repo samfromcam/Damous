@@ -1,4 +1,5 @@
 import './Home.css'
+import Header from '../components/Header'
 import Hero from '../components/Hero'
 import WhatWeDo from '../components/WhatWeDo'
 import HowItWorks from '../components/HowItWorks'
@@ -15,7 +16,7 @@ function Home() {
   return (
     <>
       <div className="header">
-        <h1>Damous</h1>
+        <Header />
       </div>
       <div className="sections">
         <Hero />

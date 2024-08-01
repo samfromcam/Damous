@@ -1,0 +1,130 @@
+/* ProblemSection.css */
+
+.section-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.section-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size:  clamp(20px, 3vw, 30px);;
+    color: #F0F0F0;
+}
+
+.section-description {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: clamp(15px, 2vw, 18px);
+    color: #FFFFFF;
+    margin: 10px 0;
+}
+
+.section-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #FFFFFF;
+}
+
+.section-list-item {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: clamp(15px, 2vw, 18px);; /* Responsive font size */
+}
+
+.section-button {
+    margin-top: 8px;
+    padding: 3px 20px;
+    border-radius: 8px;
+    background-color: #7BEAE3;
+    border-color: #7BEAE3;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 300;
+    }
+
+.section-review .sidebar {
+    background: linear-gradient(133.16deg, #C9C8F8 48.81%, #F7E8E8 106.16%);
+    width: 10px;
+    border-radius: 10px;
+    margin-inline: 20px;
+}
+
+.section-review {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: clamp(15px, 2vw, 18px);
+    color: #FFFFFF;
+    margin: 10px 0;
+}
+
+.reviewer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 70px;
+    gap: 20px;
+    margin-top: 30px;
+    & img {
+        height: 70px;
+    }
+    & .reviewer-content {
+        & .reviewer-name {
+            font-family: Poppins;
+            font-size: clamp(15px, 2vw, 18px);
+            font-weight: 500;
+            line-height: 22.5px;
+            text-align: left;
+        }
+        & .reviewer-company {
+            font-family: Poppins;
+            font-size: clamp(12px, 1.5vw, 15px);
+            font-weight: 500;
+            line-height: 18px;
+            text-align: left;
+            color: #A9A4A4;            
+        }
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .section-title {
+        font-size: 1.5rem; /* Adjusted for smaller screens */
+        line-height: 2rem; /* Adjusted for smaller screens */
+        width: 90%;
+        left: 5%;
+        transform: translateX(0%);
+        top: 380px;
+    }
+
+    .section-description {
+        font-size: 0.875rem; /* Adjusted for smaller screens */
+        line-height: 1.25rem; /* Adjusted for smaller screens */
+        width: 90%;
+        left: 5%;
+        transform: translateX(0%);
+        top: 540px;
+    }
+
+    .section-list {
+        padding-left: 10px;
+        width: 90%;
+        left: 5%;
+        transform: translateX(0%);
+        top: 660px;
+    }
+
+    .section-list-item {
+        font-size: 0.875rem; /* Adjusted for smaller screens */
+        line-height: 1.25rem; /* Adjusted for smaller screens */
+    }
+}

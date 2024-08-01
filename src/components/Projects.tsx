@@ -19,13 +19,13 @@ export default function Projects() {
                 <p className="type">CASE STUDY</p>
                 <p className="caseTitle">Urban Transport Complaints</p>
             </a>
-            <a href="/case-study" className="project">
+            {/* <a href="/case-study" className="project">
                 <div className="icon">
                     <img src="./roseCase.png" alt="" />
                 </div>
                 <p className="type">CASE STUDY</p>
                 <p className="caseTitle">Damous X Rose Inc</p>
-            </a>
+            </a> */}
         </div>
     </div>
   )
