@@ -85,7 +85,7 @@ class DemoCarousel extends Component {
             </Carousel>
         );
     }
-};
+}
 
 export default function Customers() {
   return (
