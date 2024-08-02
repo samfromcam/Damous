@@ -1,5 +1,5 @@
 import './Projects.css'
-import SectionHeader from './sectionHeader'
+import SectionHeader from './common/sectionHeader'
 import "@fontsource/poppins/600.css"
 import "@fontsource/poppins/300.css"
 

@@ -1,5 +1,5 @@
-import './Section.css';
-import Banner from './Banner';
+import './common/Section.css';
+import Banner from './common/Banner';
 
 // SolutionSection component using styled-components
 const SolutionSection = () => {

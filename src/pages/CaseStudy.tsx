@@ -3,9 +3,9 @@ import ProblemSection from '../components/ProblemSection';
 import SolutionSection from '../components/SolutionSection';
 import ResultSection from '../components/ResultSection';
 import ReviewSection from '../components/ReviewSection';
-import Header from '../components/Header';
+import Header from '../components/common/Header';
 import SidebarHeader from '../components/SidebarHeader';
-import Footer from '../components/Footer';
+import Footer from '../components/common/Footer';
 import "@fontsource/poppins/700.css"
 import "@fontsource/poppins/600.css"
 import "@fontsource/poppins/500.css"
