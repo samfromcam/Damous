@@ -74,14 +74,14 @@ class DemoCarousel extends Component {
                         <p className="company">Professor of Civil Engineering, Northwestern University</p>
                     </div>
                 </div>
-                <div className='item'>
+                {/* <div className='item'>
                     <p className='testimonial'></p>
                     <div className="user">
                         <p className="person">Djibril Cisse</p>
                         <p className="company">Rose Inc</p>
                     </div>
                     
-                </div>
+                </div> */}
             </Carousel>
         );
     }
