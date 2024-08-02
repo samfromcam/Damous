@@ -55,7 +55,8 @@ export default function Hero() {
           });
           
           gsap.to(".pImage", {
-            yPercent: 10,
+            yPercent: 20,
+            xPercent: 2,
             ease: "none",
             scrollTrigger: {
               trigger: ".hero",

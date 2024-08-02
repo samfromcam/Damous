@@ -23,7 +23,7 @@ export default function HowItWorks() {
               }, 
             });
             
-            gsap.to(".pImage", {
+            gsap.to(".pImage-hiw", {
               yPercent: -10,
               ease: "none",
               scrollTrigger: {
@@ -66,7 +66,7 @@ export default function HowItWorks() {
                     <hr className="solid"></hr>
                 </div>
             </div>
-            <img className='pImage' src='./step1.png'></img>
+            <img className='pImage-hiw' src='./step1.png'></img>
         </div>
     </div>
     </>
