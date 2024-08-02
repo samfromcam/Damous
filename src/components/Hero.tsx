@@ -1,8 +1,14 @@
 import { useEffect } from 'react';
 import './Hero.css';
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "@fontsource/poppins/700.css";
 import "@fontsource/poppins/600.css";
 import "@fontsource/poppins/500.css";
+
+gsap.registerPlugin(useGSAP, ScrollTrigger);
+
 
 // Add this type declaration at the top of your file
 declare global {
@@ -34,6 +40,33 @@ export default function Hero() {
     }
   };
 
+  useGSAP(
+      () => {
+          // gsap code here...
+          gsap.to(".hero-text", {
+            yPercent: -20,
+            ease: "none",
+            scrollTrigger: {
+              trigger: ".hero",
+              start: "top top", // the default values
+              end: "bottom top",
+              scrub: true
+            }, 
+          });
+          
+          gsap.to(".pImage", {
+            yPercent: 10,
+            ease: "none",
+            scrollTrigger: {
+              trigger: ".hero",
+              start: "top top", // the default values
+              end: "bottom top",
+              scrub: true
+            }, 
+          });
+      }
+  )
+
   return (
     <div className="hero">
       <div className="hero-text">
@@ -49,7 +82,7 @@ export default function Hero() {
         <p className="subheading">Don't Have The Data You Need?<br />We'll Get It For You</p>
         <button onClick={openCalendly}>Get Data</button>
       </div>
-      <img src='/hero_image.png' alt="Hero" />
+      <img className='pImage' src='/hero_image.png' alt="Hero" />
     </div>
   );
 }

@@ -2,11 +2,42 @@ import './HowItWorks.css'
 import SectionHeader from './sectionHeader'
 import "@fontsource/poppins/500.css"
 import "@fontsource/poppins/300.css"
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 export default function HowItWorks() {
+    useGSAP(
+        () => {
+
+            gsap.to(".Steps", {
+              yPercent: 10,
+              ease: "none",
+              scrollTrigger: {
+                trigger: ".HowItWorks",
+                start: "top top", // the default values
+                end: "bottom top",
+                scrub: true
+              }, 
+            });
+            
+            gsap.to(".pImage", {
+              yPercent: -10,
+              ease: "none",
+              scrollTrigger: {
+                trigger: ".HowItWorks",
+                start: "top top", // the default values
+                end: "bottom top",
+                scrub: true
+              }, 
+            });
+        }
+    )
   return (
     <>
-    <SectionHeader 
+        <SectionHeader 
           title="HOW IT WORKS"
           headline="Getting Your Data"
           description="Let us prepare your tailored datasets while you work on what’s important!"
@@ -35,7 +66,7 @@ export default function HowItWorks() {
                     <hr className="solid"></hr>
                 </div>
             </div>
-            <img src='./step1.png'></img>
+            <img className='pImage' src='./step1.png'></img>
         </div>
     </div>
     </>
