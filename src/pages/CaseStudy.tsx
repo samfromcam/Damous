@@ -1,10 +1,10 @@
 import './CaseStudy.css'
-import ProblemSection from './ProblemSection';
-import SolutionSection from './SolutionSection';
-import ResultSection from './ResultSection';
-import ReviewSection from './ReviewSection';
+import ProblemSection from '../components/ProblemSection';
+import SolutionSection from '../components/SolutionSection';
+import ResultSection from '../components/ResultSection';
+import ReviewSection from '../components/ReviewSection';
 import Header from '../components/Header';
-import SidebarHeader from './SidebarHeader';
+import SidebarHeader from '../components/SidebarHeader';
 import Footer from '../components/Footer';
 import "@fontsource/poppins/700.css"
 import "@fontsource/poppins/600.css"

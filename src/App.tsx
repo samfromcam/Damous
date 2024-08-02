@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home'; // Your main page component
-import CaseStudyPage from './case-study/CaseStudy'; // Your case study page component
+import CaseStudyPage from './pages/CaseStudy'; // Your case study page component
 
 const App = () => {
   return (
