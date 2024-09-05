@@ -4,9 +4,8 @@
     font-weight: 700;
     line-height: 75px;
     text-align: left;
-    background: -webkit-linear-gradient(90deg, #3946C1 0%, #5661CF 100%);
+    background: -webkit-linear-gradient(90deg, #3946c1 0%, #5661cf 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-  

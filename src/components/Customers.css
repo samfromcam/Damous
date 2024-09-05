@@ -3,7 +3,7 @@
     font-size: clamp(15px, 1.5vw, 25px);
     font-weight: 300;
     line-height: 30px;
-    text-align: center;    
+    text-align: center;
     color: white;
     width: 85%;
 }
@@ -13,7 +13,7 @@
     font-size: clamp(12px, 1.3vw, 22px);
     font-weight: 300;
     text-align: center;
-    color: white;    
+    color: white;
 }
 
 .company {
@@ -22,12 +22,17 @@
     font-weight: 300;
     line-height: 18px;
     text-align: center;
-    color: #C6C6C6;  
-    margin-top: -10px;  
+    color: #c6c6c6;
+    margin-top: -10px;
 }
 
 .carousel-container {
-    background: linear-gradient(206.11deg, rgba(32, 25, 25, 0.8) 6.75%, rgba(51, 47, 68, 0.8) 51.85%, rgba(73, 72, 115, 0.8) 101.76%);
+    background: linear-gradient(
+        206.11deg,
+        rgba(32, 25, 25, 0.8) 6.75%,
+        rgba(51, 47, 68, 0.8) 51.85%,
+        rgba(73, 72, 115, 0.8) 101.76%
+    );
     height: 33%;
     padding: 63px 67px 63px 0px;
     border-radius: 20px;
@@ -61,11 +66,10 @@
         background-color: transparent;
         border: 0;
     }
-    
 }
 
 .active {
-    opacity: .45;
+    opacity: 0.45;
     transition-delay: 2s;
     animation: fadeIn 1s forwards;
 }
@@ -84,6 +88,6 @@
 
 @keyframes fadeOut {
     to {
-        opacity: .45;
+        opacity: 0.45;
     }
 }

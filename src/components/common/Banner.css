@@ -1,10 +1,10 @@
 .banner {
     padding: 0px 20px;
-    background: linear-gradient(90deg, #131B30 0%, #161F39 100%);
+    background: linear-gradient(90deg, #131b30 0%, #161f39 100%);
     border-radius: 20px;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     font-size: 18px;
     color: #918383;
-    line-height: .20em;
+    line-height: 0.2em;
 }

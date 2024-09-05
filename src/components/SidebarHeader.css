@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar-title h1 {
@@ -12,7 +12,7 @@
     font-weight: 500;
     font-size: clamp(20px, 4vw, 40px);
     line-height: 1.2;
-    background: linear-gradient(91.36deg, #C9C8F8 0.67%, #F7E8E8 28.92%);
+    background: linear-gradient(91.36deg, #c9c8f8 0.67%, #f7e8e8 28.92%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -28,7 +28,7 @@
     font-weight: 500;
     font-size: clamp(15px, 1.3vw, 20px); /* Responsive font size */
     text-decoration-line: underline;
-    color: #FFCBCB;
+    color: #ffcbcb;
     display: block; /* Make links block to fill width */
     margin-bottom: 10px; /* Add space between links */
 }
@@ -38,15 +38,18 @@
     font-weight: 500;
     font-size: clamp(15px, 1.3vw, 20px); /* Responsive font size */
     text-decoration-line: underline;
-    color: #FFCBCB;
+    color: #ffcbcb;
     display: block; /* Make links block to fill width */
     margin-bottom: 10px; /* Add space between links */
 }
 
-
 @media (max-width: 768px) {
     .sidebar-title h1 {
-        font-size: clamp(20px, 5vw, 40px);; /* Larger font size for better readability on small devices */
+        font-size: clamp(
+            20px,
+            5vw,
+            40px
+        ); /* Larger font size for better readability on small devices */
     }
 
     .sidebar-logo img {

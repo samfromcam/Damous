@@ -26,7 +26,7 @@
     & p {
         margin-left: 15px;
         font-family: Poppins;
-        text-align: left;    
+        text-align: left;
     }
 }
 
@@ -36,7 +36,7 @@ p.type {
     line-height: 15px;
     letter-spacing: 0.15em;
     margin-top: 22px;
-    color: #9BAEF0;
+    color: #9baef0;
 }
 
 p.caseTitle {
@@ -45,5 +45,5 @@ p.caseTitle {
     line-height: 22.5px;
     letter-spacing: 0.15em;
     margin-top: -7px;
-    color: #F3DEDE;
+    color: #f3dede;
 }

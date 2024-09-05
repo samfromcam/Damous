@@ -20,18 +20,18 @@ footer {
     min-height: 80px;
 }
 
-.left_text{
+.left_text {
     font-family: Poppins;
-    text-align: left;   
+    text-align: left;
     color: #ffffff;
-    & p.title{
-        color: #3946C1;
+    & p.title {
+        color: #3946c1;
         font-size: clamp(15px, 3vw, 20px);
         font-weight: 700;
     }
-    & p.emails{
+    & p.emails {
         margin-top: -10px;
-        color: #B1ADAD;
+        color: #b1adad;
         font-size: clamp(8px, 2vw, 12px);
         font-weight: 700;
     }

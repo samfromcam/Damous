@@ -1,32 +1,28 @@
-body {
-  background-color: black;
-}
-
 .header {
-  max-width: 250px;
-  min-height: 70px;
-  margin-top: 3%;
-  margin-left: 5%;
+    max-width: 250px;
+    min-height: 70px;
+    margin-top: 3%;
+    margin-left: 5%;
 }
 
 .header h1 {
-  font-family: 'Poppins';
-  font-size: clamp(40px, 7vw, 50px);
-  font-weight: 700;
-  text-align: left;
-  background: -webkit-linear-gradient(90deg, #3946C1 0%, #5661CF 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    font-family: 'Poppins';
+    font-size: clamp(40px, 7vw, 50px);
+    font-weight: 700;
+    text-align: left;
+    background: -webkit-linear-gradient(90deg, #3946c1 0%, #5661cf 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .sections {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  row-gap: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    row-gap: 100px;
 }
 
 button {
-  color: black;
+    color: black;
 }

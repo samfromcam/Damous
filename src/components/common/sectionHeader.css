@@ -8,7 +8,7 @@
     max-width: 200px;
     padding: 0.4% 4% 0.4% 4%;
     border-radius: 30px;
-    background: linear-gradient(90deg, #131B30 0%, #161F39 100%);
+    background: linear-gradient(90deg, #131b30 0%, #161f39 100%);
     font-family: 'Poppins';
     font-size: clamp(12px, 1.4vw, 22px);
     font-weight: 300;
@@ -24,7 +24,7 @@
     font-weight: 600;
     text-align: left;
     text-decoration: underline;
-    background: -webkit-linear-gradient(91.36deg, #C9C8F8 0%, #F7E8E8 100%);
+    background: -webkit-linear-gradient(91.36deg, #c9c8f8 0%, #f7e8e8 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -36,7 +36,7 @@
     font-size: clamp(15px, 1.4vw, 25px);
     font-weight: 300;
     text-align: center;
-    color: #E0D1D1;
+    color: #e0d1d1;
     width: 60%;
     height: 20%;
     gap: 0px;

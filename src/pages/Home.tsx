@@ -6,38 +6,32 @@ import HowItWorks from '../components/HowItWorks'
 import Customers from '../components/Customers'
 import Projects from '../components/Projects'
 import Footer from '../components/common/Footer'
-import "@fontsource/poppins/700.css"
-import "@fontsource/poppins/600.css"
-import "@fontsource/poppins/500.css"
-import { gsap } from "gsap";
-import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import '@fontsource/poppins/700.css'
+import '@fontsource/poppins/600.css'
+import '@fontsource/poppins/500.css'
+import { gsap } from 'gsap'
+import { useGSAP } from '@gsap/react'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-gsap.registerPlugin(useGSAP, ScrollTrigger);
-
+gsap.registerPlugin(useGSAP, ScrollTrigger)
 
 function Home() {
-  useGSAP(
-    () => {
-
-        
-    }
-)
-  return (
-    <>
-      <div className="header">
-        <Header />
-      </div>
-      <div className="sections">
-        <Hero />
-        <WhatWeDo />
-        <HowItWorks />
-        <Customers />
-        <Projects />
-        <Footer />
-      </div>
-    </>
-  )
+    useGSAP(() => {})
+    return (
+        <>
+            <div className="header">
+                <Header />
+            </div>
+            <div className="sections">
+                <Hero />
+                <WhatWeDo />
+                <HowItWorks />
+                <Customers />
+                <Projects />
+                <Footer />
+            </div>
+        </>
+    )
 }
 
-export default Home;
+export default Home

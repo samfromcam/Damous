@@ -12,43 +12,43 @@
 .section-title {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    font-size:  clamp(20px, 3vw, 30px);;
-    color: #F0F0F0;
+    font-size: clamp(20px, 3vw, 30px);
+    color: #f0f0f0;
 }
 
 .section-description {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: clamp(15px, 2vw, 18px);
-    color: #FFFFFF;
+    color: #ffffff;
     margin: 10px 0;
 }
 
 .section-list {
     list-style-type: disc;
     padding-left: 20px;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .section-list-item {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    font-size: clamp(15px, 2vw, 18px);; /* Responsive font size */
+    font-size: clamp(15px, 2vw, 18px); /* Responsive font size */
 }
 
 .section-button {
     margin-top: 8px;
     padding: 3px 20px;
     border-radius: 8px;
-    background-color: #7BEAE3;
-    border-color: #7BEAE3;
+    background-color: #7beae3;
+    border-color: #7beae3;
     font-family: Poppins;
     font-size: 15px;
     font-weight: 300;
-    }
+}
 
 .section-review .sidebar {
-    background: linear-gradient(133.16deg, #C9C8F8 48.81%, #F7E8E8 106.16%);
+    background: linear-gradient(133.16deg, #c9c8f8 48.81%, #f7e8e8 106.16%);
     width: 10px;
     border-radius: 10px;
     margin-inline: 20px;
@@ -61,7 +61,7 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: clamp(15px, 2vw, 18px);
-    color: #FFFFFF;
+    color: #ffffff;
     margin: 10px 0;
 }
 
@@ -89,14 +89,13 @@
             font-weight: 500;
             line-height: 18px;
             text-align: left;
-            color: #A9A4A4;            
+            color: #a9a4a4;
         }
     }
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-
     .section-title {
         font-size: 1.5rem; /* Adjusted for smaller screens */
         line-height: 2rem; /* Adjusted for smaller screens */

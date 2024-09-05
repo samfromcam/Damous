@@ -1,35 +1,37 @@
 import './Footer.css'
-import "@fontsource/poppins/700.css"
-import "@fontsource/poppins/600.css"
-import "@fontsource/poppins/500.css"
-import { useEffect } from 'react';
+import '@fontsource/poppins/700.css'
+import '@fontsource/poppins/600.css'
+import '@fontsource/poppins/500.css'
+import { useEffect } from 'react'
 
 export default function Footer() {
     useEffect(() => {
-        const script = document.createElement('script');
-        script.src = "https://assets.calendly.com/assets/external/widget.js";
-        script.async = true;
-        document.body.appendChild(script);
-    
+        const script = document.createElement('script')
+        script.src = 'https://assets.calendly.com/assets/external/widget.js'
+        script.async = true
+        document.body.appendChild(script)
+
         return () => {
-          document.body.removeChild(script);
-        };
-      }, []);
-    
-      const openCalendly = (e: React.MouseEvent<HTMLButtonElement>) => {
-        e.preventDefault();
-        if (window.Calendly) {
-          window.Calendly.initPopupWidget({url: 'https://calendly.com/damous-info/general-meeting'});
-        } else {
-          console.error('Calendly script not loaded');
+            document.body.removeChild(script)
         }
-      };
-    
+    }, [])
+
+    const openCalendly = (e: React.MouseEvent<HTMLButtonElement>) => {
+        e.preventDefault()
+        if (window.Calendly) {
+            window.Calendly.initPopupWidget({
+                url: 'https://calendly.com/damous-info/general-meeting',
+            })
+        } else {
+            console.error('Calendly script not loaded')
+        }
+    }
+
     return (
-        <div className='footer'>
-            <hr/>
+        <div className="footer">
+            <hr />
             <footer>
-                <div className='left_text'>
+                <div className="left_text">
                     <p className="title">Damous</p>
                     <p className="emails">info@damous.com</p>
                     <p className="emails">contact@damous.com</p>
