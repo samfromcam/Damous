@@ -66,7 +66,7 @@ function Form() {
         []
     )
 
-    const handleMultiSelect = useCallback((event: React.SyntheticEvent) => {
+    const handleMultiSelect = useCallback((event: any) => {
         setPost((prevPost) => ({
             ...prevPost,
             race: event.map((race: any) => race.value),
@@ -149,12 +149,12 @@ function Form() {
                     'https://5au48yqmy4.execute-api.ap-northeast-1.amazonaws.com/production/get_colleges?search='
                 )
                 setColleges(
-                    response['urls'].map((college) => ({
+                    response['urls'].map((college: any) => ({
                         value: college[0],
                         label: college[1],
                     }))
                 )
-            } catch (error) {
+            } catch (error: any) {
                 console.error(error.message)
             }
         }
@@ -171,7 +171,7 @@ function Form() {
             </h1>
             <form onSubmit={handleSubmit}>
                 <CountrySelect
-                    onChange={(e) => {
+                    onChange={(e: any) => {
                         setCountryid(e.id)
                         setPost({ ...post, country: e.name })
                     }}
@@ -180,7 +180,7 @@ function Form() {
                 />
                 <StateSelect
                     countryid={countryid}
-                    onChange={(e) => {
+                    onChange={(e: any) => {
                         setstateid(e.id)
                         setPost({ ...post, state: e.name })
                     }}
@@ -189,7 +189,7 @@ function Form() {
                 <CitySelect
                     countryid={countryid}
                     stateid={stateid}
-                    onChange={(e) => {
+                    onChange={(e: any) => {
                         setPost({ ...post, city: e.name })
                     }}
                     placeHolder="Select City"

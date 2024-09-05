@@ -15,7 +15,7 @@ function Collect() {
                 )
                 setData(response['urls'])
                 console.log(response)
-            } catch (error) {
+            } catch (error: any) {
                 console.error(error.message)
             }
             setLoading(false)
@@ -27,11 +27,11 @@ function Collect() {
     const [email, setEmail] = useState('')
     const [jobs, setJobs] = useState(0)
 
-    const handleChange = useCallback((event) => {
+    const handleChange = useCallback((event: any) => {
         setEmail(event.target.value)
     }, [])
 
-    const handleSubmit = async (event) => {
+    const handleSubmit = async (event: any) => {
         event.preventDefault() // Prevent the default form submission
 
         try {
@@ -41,7 +41,7 @@ function Collect() {
             )
             setJobs(response['jobs'])
             console.log(response)
-        } catch (error) {
+        } catch (error: any) {
             console.error(error.message)
             alert('email does not exist in the workers list')
         }
