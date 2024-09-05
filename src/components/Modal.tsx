@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useState } from 'react'
 
 import './Modal.css'
 
@@ -48,7 +48,7 @@ export const Modal = (props: modalProp) => {
         (
             event:
                 | React.ChangeEvent<HTMLInputElement>
-                | React.ChangeEventHandler<HTMLSelectElement>
+                | React.ChangeEvent<HTMLSelectElement>
         ) => {
             setFormState((prevForm: any) => ({
                 ...prevForm,
